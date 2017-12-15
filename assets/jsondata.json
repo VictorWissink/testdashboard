@@ -1,0 +1,286 @@
+{"testruns" : [
+  {
+    "date" : "21-11-2017:10:20:23",
+    "requirements" : [
+       { "name" : "CBM37",
+         "description" : "Onderhouden contract",
+         "testresults" : [
+           {
+             "name" : "1A",
+             "status" : "OK",
+             "trace"  : null,
+             "goal"   : "test everything"
+           },
+           {
+             "name" : "2A",
+             "status" : "OK",
+             "trace"  : null,
+             "goal"   : "test everything"
+           },
+           {
+             "name" : "3A",
+             "status" : "OK",
+             "trace"  : null,
+             "goal"   : "test everything"
+           }
+           ]
+       },
+       {"name" : "CBM38",
+         "description" : "Exporten gegevens",
+         "testresults" : [
+           {
+             "name" : "1A",
+             "status" : "OK",
+             "trace"  : null,
+             "goal"   : "test everything"
+           },
+           {
+             "name" : "2A",
+             "status" : "OK",
+             "trace"  : null,
+             "goal"   : "test nothing"
+           },
+           {
+             "name" : "3A",
+             "status" : "FAIL",
+             "trace"  : "Sjava.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) Caused by: org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.checkThatConnectorsHaveStarted(TomcatEmbeddedServletContainer.java:222) at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:198) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)",
+             "goal"   : "test nothing"
+           }
+           ]
+       },
+      {"name" : "CBM39",
+        "description" : "Onderhouden gebruikers",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test nothing"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "3A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          }
+        ]
+      },
+      {"name" : "CBM40",
+        "description" : "Onderhouden locaties",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "3A",
+            "status" : "FAIL",
+            "trace"  : "java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) Caused by: org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.checkThatConnectorsHaveStarted(TomcatEmbeddedServletContainer.java:222) at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:198) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)",
+            "goal"   : "test things"
+          }
+        ]
+      },
+      {"name" : "CBM41",
+        "description" : "import locaties",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "3A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          }
+        ]
+      }, {"name" : "CBM42",
+        "description" : "Beheer parameters",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "3A",
+            "status" : "FAIL",
+            "trace"  : "java.lang.IllegalStateException: Failed to load ApplicationContext at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103) Caused by: org.springframework.boot.context.embedded.tomcat.ConnectorStartFailedException: Connector configured to listen on port 8080 failed to start at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.checkThatConnectorsHaveStarted(TomcatEmbeddedServletContainer.java:222) at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:198) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:297) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:145) at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693) at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360) at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:120) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) at cucumber.runtime.java.spring.CucumberTestContextManager.getContext(SpringFactory.java:215) at cucumber.runtime.java.spring.CucumberTestContextManager.(SpringFactory.java:207) at cucumber.runtime.java.spring.SpringFactory.start(SpringFactory.java:102) at cucumber.runtime.java.JavaBackend.buildWorld(JavaBackend.java:123) at cucumber.runtime.Runtime.buildBackendWorlds(Runtime.java:141) at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:38) at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63) at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95) at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38) at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) at org.junit.runners.ParentRunner.run(ParentRunner.java:363) at cucumber.api.junit.Cucumber.run(Cucumber.java:100) at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:283) at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:173) at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:128) at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203) at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155) at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)",
+            "goal"   : "test things"
+          }
+        ]
+      }
+       ]
+  }, {
+   "date" : "20-11-2017:10:21:34",
+   "requirements" : [
+      { "name" : "CBM37",
+        "description" : "Onderhouden contract",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "test things"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "nothing"
+
+          },
+          {
+            "name" : "3A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "nothing"
+
+          }
+          ]
+      },
+      {"name" : "CBM38",
+        "description" : "Exporten gegevens",
+        "testresults" : [
+          {
+            "name" : "1A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "testdata zijn"
+          },
+          {
+            "name" : "2A",
+            "status" : "OK",
+            "trace"  : null,
+            "goal"   : "testdata zijn"
+          },
+          {
+            "name" : "3A",
+            "status" : "FAIL",
+            "trace"  : "STACKTRACE",
+            "goal"   : "testdata zijn"
+          }
+          ]
+      }
+      ]
+    },
+    {
+      "date" : "10-11-2017:10:21:34",
+      "requirements" : [
+         { "name" : "CBM37",
+           "description" : "Onderhouden contract",
+           "testresults" : [
+             {
+               "name" : "1A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "een mooie taak"
+             },
+             {
+               "name" : "2A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "nobel streven"
+             },
+             {
+               "name" : "3A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "testdata zijn"
+             }
+             ]
+         },
+         {"name" : "CBM38",
+           "description" : "Exporten gegevens",
+           "testresults" : [
+             {
+               "name" : "1A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "functionaliteit presenteren"
+             },
+             {
+               "name" : "2A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "er mooi uit zien"
+             },
+             {
+               "name" : "3A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "leesbaar exporten van gegevens"
+             }
+             ]
+         }
+         ]
+    }, {
+      "date" : "5-11-2017:10:21:34",
+      "requirements" : [
+         { "name" : "CBM37",
+           "description" : "Onderhouden contract",
+           "testresults" : [
+             {
+               "name" : "1A",
+               "status" : "FAIL",
+               "trace"  : "STACKTRACE",
+               "goal"   : "niet weggooien van contract"
+             },
+             {
+               "name" : "3A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "mooi doel"
+             }
+             ]
+         },
+         {"name" : "CBM38",
+           "description" : "Exporten gegevens",
+           "testresults" : [
+             {
+               "name" : "1A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "demo gegevens zijn"
+             },
+             {
+               "name" : "2A",
+               "status" : "OK",
+               "trace"  : null,
+               "goal"   : "export product weergeven"
+             }
+            ]
+         }
+         ]
+    }
+  ]
+}
